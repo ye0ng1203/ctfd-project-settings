@@ -42,9 +42,6 @@ data:
           - "alertmanager.monitoring.svc:9093"
 
     scrape_configs:
-      - job_name: 'server-info'
-        static_configs:
-          - targets: ['10.1.2.137:31672','10.1.2.141:31672','10.1.2.74:31672']
       - job_name: 'kubernetes-apiservers'
 
         kubernetes_sd_configs:
